@@ -127,13 +127,13 @@ git log --oneline
 
 Se utiliza para consultar rápidamente los commits realizados.
 
-17. git add .
-Descripción: Agrega todos los archivos modificados al área de preparación.
+17. git revert
+Descripción: Revierte los cambios realizados por un commit específico creando un nuevo commit.
 
 Ejemplo de caso de uso:
-git add .
+git revert a1b2c3d
 
-Se utiliza cuando se desean incluir todos los cambios realizados.
+Se utiliza cuando se desea deshacer un commit sin alterar el historial del repositorio.
 
 18. git rm
 Descripción: Elimina archivos del repositorio.
