@@ -5,7 +5,7 @@
         <title>Estructura Base></title>
     </head>
     <body>
-        <h3>Encabezados</h3>
+        <h3 id="Encabezado">Encabezados</h3>
         <h1>Encabezado H1</h1>
         <h2>Encabezado H2</h2>
         <h3>Encabezado H3</h3>
@@ -22,7 +22,7 @@
         <hr>
         <img width="300" src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_lg_2x/f_auto/primary/cqtfkalqbqlotq4afz2o">
         <hr>
-        <h3>Listas</h3>
+        <h3 id="Lista">Listas</h3>
         <h3>Lista no ordenada</h3>
         <ul>
             <li>Elemento de lista 1</li>
@@ -36,4 +36,84 @@
             <li>Elemento de lista 3</li>            
         </ol>
     </body>
+        <hr>
+        <h3>Tabla</h3>
+        <table border="1">
+            <tr>
+                 <th Colspan="3">Tabla Alumnos</th>
+            </tr>
+            <tr>
+                <td>Nombre</td>
+                <td>Edad</td>
+                <td>Escuela</td>
+            </tr>
+             <tr>
+                <td>x</td>
+                <td>y</td>
+                <td>z</td>
+            </tr>
+        </table>
+
+            <hr>
+            <h3>Enlaces</h3>
+            <a href="https://www.google.com/?hl=es" title="Ir a Google" target="_blank">Google</a><br>
+
+            <a href="#Encabezado" title="Ir a Encabezados">Ir a Encabezados</a><br>
+
+            <a href="#Lista" title="Ir a Listas">Ir a Listas</a>
+
+            <h3>Formulario</h3>
+            <form>
+                <fieldset>
+                    <legend>Ejemplo Formulario</legend>
+                    <label>Texto</label>
+                    <input type="text">
+                    <br><br>
+                    <label>Email</label>
+                    <input type="email">
+                    <br><br>
+                    <label>Password</label>
+                    <input type="password">
+                    <br><br>
+                    <label>Numero</label>
+                    <input type="number">
+                    <br><br>
+                    <label>Rango</label>
+                    <input type="range">
+                    <br><br>
+                    <label>Fecha</label>
+                    <input type="date">
+                    <br><br>
+                    <label>Color</label>
+                    <input type="color">
+                    <br><br>
+                    <label>CheckBox</label>
+                    <input type="checkbox">
+                    <br><br>
+                    <label>Radio</label>
+                    <input type="radio">
+                    <br><br>
+                    <label>Opcion 1</label><br>
+                    <input type="radio">
+                    <label>Opcion 2</label><br>
+                    <br><br>
+                    <label>Selección de elementos</label><br>
+                    <select>
+                        <option>Opcion 1</option>
+                        <option>Opcion 2</option>
+                        <option>Opcion 3</option>
+                    </select>
+                    <br><br>
+                    <label>Textarea</label><br>
+                    <textarea cols="15" rows="5"></textarea>
+                    <br><br>
+                    <label>Archivo</label>
+                    <input type="file">
+                    <br><br>
+                    <input type="submit">
+
+                </fieldset>
+            </form>   
+           
+    </body> </html>
 </html>
