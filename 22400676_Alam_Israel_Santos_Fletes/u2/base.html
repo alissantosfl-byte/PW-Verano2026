@@ -3,6 +3,112 @@
     <head>
         <meta charset="UTF-8">
         <title>Estructura Base></title>
+        <style>
+            body{
+                font-family: Arial,Helvetica,sans-serif;
+                background: rgb(254, 254, 254);
+                color: rgb(0, 0, 0);
+                margin: 0;
+                padding: 20px;
+            }
+
+
+            div,form,table{
+                background: white;
+                padding: 15px;
+                margin-bottom: 20px;
+                border-radius: 8px;
+            }
+
+            h1,h2,h3,h4,h5,h6{
+                color: rgb(0, 123, 255);
+            }
+
+            img{
+
+                width:300px;
+                border-radius: 10px;
+                display: block;
+                margin: auto;
+            }
+
+            ul, ol{
+                padding-left: 30px;
+            }
+
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            
+            th{
+                background: rgb(34, 95, 236);
+                color: white;
+                padding: 10px;
+            }
+
+            td{
+                padding: 10px;
+            }
+
+            a{
+                color: blue;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            a:hover{
+                text-decoration: underline;
+                color: blue;
+            }
+
+            fieldset {
+                border: 2px solid blue;
+                border-radius: 10px;
+                padding: 20px;
+            }
+
+            legend {
+                font-weight: bold;
+                padding: 10px;
+                color: blue;
+            }
+
+            label {
+                font-weight: bold;
+            }
+
+            input, select, textarea {
+                margin-top: 5px;
+                padding: 8px;
+                border: 1px solid red;
+                border-radius: 10px;
+            }
+
+            input[type="submit"], input[type="reset"] {
+                background: blue;
+                color: white;
+                border: none;
+                cursor:pointer;
+            }
+
+            .boton {
+                background: blue;
+                color: white;
+                border: none;
+                cursor:pointer;
+            }
+
+            input[type="reset"]{
+                background: gray;
+            }
+
+            input[type="submit"]:hover {
+                background: gray;
+            }
+
+        </style>
     </head>
     <body>
         <h3 id="Encabezado" style="color: red; 
@@ -47,9 +153,9 @@
                  <th Colspan="3">Tabla Alumnos</th>
             </tr>
             <tr>
-                <td>Nombre</td>
-                <td>Edad</td>
-                <td>Escuela</td>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Escuela</th>
             </tr>
              <tr>
                 <td>x</td>
@@ -114,7 +220,9 @@
                     <label>Archivo</label>
                     <input type="file">
                     <br><br>
-                    <input type="submit">
+                    <input class="boton" type="submit">
+                    <input type="reset">
+
 
                 </fieldset>
             </form>   
