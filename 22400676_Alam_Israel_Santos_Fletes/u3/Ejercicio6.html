@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+        .contenedorPrincipal{
+            display: grid;
+            background: black;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "izquierda derecha";
+            font-family: "Segoe UI", Arial, sans-serif;
+            min-height:100vh;
+        }
+
+        .contenedorDerecho{
+            grid-area: derecha;
+            display:flex;
+            justify-content:center;
+            align-items:flex-start;
+            flex-direction:column;  
+            padding:0px 50px;   
+        }
+
+        .contenedorIzquierdo{
+            display: flex;
+            grid-area: izquierda;
+            justify-content:center;
+            align-items:center;
+        }
+
+
+        .registrarse{
+             display: flex;
+            text-align: center;
+            border-radius: 20px;
+            height: 40px;
+            width: 50%;
+            background: white;
+            color: black;
+            border: none;
+            gap: 10px;          
+            justify-content: center;
+            align-items: center; 
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+        }
+
+        .iniciar{
+            text-align: center;
+            border-radius: 20px;
+            height: 40px;
+            width: 50%;
+            background: rgb(0, 0, 0);
+            color: rgb(52, 159, 212);
+            border:1px solid gray;
+        }
+
+        .crear{
+            text-align: center;
+            border-radius: 20px;
+            height: 40px;
+            width: 50%;
+            background: rgb(0, 183, 255);
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+
+        .registrarse,
+        .crear,
+        .iniciar{
+            width:100%;
+            height:42px;
+            border-radius:30px;
+            margin-bottom:15px;
+            cursor:pointer;
+        }
+
+        .o{
+            text-align: center;
+            color: white;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+
+        .foto{
+            width: 40%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .contenedorDerecho h1{
+            font-size:3rem;
+            margin: 0;
+            color: white;
+        }
+
+        .contenedorDerecho h2{
+            font-size:1.5rem;
+            color: white;
+        }
+
+        .contenedorDerecho h3{
+            font-size:1.5rem;
+            color: white;
+        }
+
+        form{
+            width:100%;
+            max-width:400px;
+        }
+
+        h4{
+            font-size:13px;
+            color:gray;
+            margin-bottom:30px;
+        } 
+        
+        .registrarse img{
+            width:20px;
+            height:25px;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(51, 157, 219);
+        }
+
+        .footer{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-wrap:wrap;
+            gap:12px;
+            padding:15px;
+            background:black;
+            font-size:13px;
+        }
+
+        .footer a,
+        .footer span{
+            color:gray;
+            text-decoration:none;
+        }
+
+        .footer a:hover{
+            text-decoration:underline;
+        }
+
+@media (max-width:750px){
+    
+    .contenedorPrincipal{
+        grid-template-columns:1fr;
+        grid-template-areas:
+        "izquierda"
+        "derecha";
+
+        }
+
+    .contenedorIzquierdo{
+        justify-content:center;
+        align-items:center;
+        padding-top:40px;
+    }
+
+    .foto{
+        width:180px;
+    }
+
+    .contenedorDerecho{
+        align-items:center;
+        text-align:center;
+        padding:20px;
+    }
+
+    .contenedorDerecho h1{
+        font-size:3rem;
+    }
+
+    form{
+        max-width:330px;
+    }
+}       
+
+    </style>
+</head>
+<body>
+
+    <div class="contenedorPrincipal">
+
+        <div class="contenedorDerecho">
+            <h1>Lo que está <br>
+                 pasando ahora</h1>
+            <h2>Únete Hoy</h2>
+            <form>
+                <button class="registrarse" type="submit">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
+                    Registrarse con Google
+                </button>
+
+                <button class="registrarse" type="submit">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+                    Registrarse con Apple
+                </button>
+                
+                <div class="o">
+                    <h3>o</h3>
+                </div>
+
+                
+
+                <input class="crear" type="submit" value="Crear cuenta">
+
+                <h4>Al registrarse, aceptas los <a href="">Términos de servicio</a> 
+                    y la <a href="">Política <br>de privacidad</a>
+                     , incluida la política de Uso de Cookies.</h4>
+                     <h3>¿Ya tienes una cuenta?</h3>
+
+                     <input class="iniciar" type="submit" value="Iniciar sesión">
+                
+            </form>
+        </div>   
+        
+        <div class="contenedorIzquierdo">
+            <img class="foto" src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png">
+        </div>  
+
+    </div>
+    
+    <footer class="footer">
+        <a href="#">Información</a>
+        <a href="#">Descarga la app de X</a>
+        <a href="#">Grok</a>
+        <a href="#">Centro de Ayuda</a>
+        <a href="#">Condiciones de Servicio</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">X para empresas</a>
+        <a href="#">Blog</a>
+        <a href="#">Empleos</a>
+        <a href="#">Recursos para marcas</a>
+        <a href="#">Publicidad</a>
+        <a href="#">Marketing</a>
+        <a href="#">Desarrolladores</a>
+        <a href="#">Política de cookies</a>
+        <a href="#">Guía</a>
+        <a href="#">Configuración</a>
+        <a href="#">Accesibilidad</a>
+        <a href="#">Información de anuncios</a>
+
+    <span>© 2025 X Corp.</span>
+    </footer>
+
+</body>
+</html>
+
